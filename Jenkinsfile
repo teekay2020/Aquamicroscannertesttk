@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("testingaquamicroscanner/nodeapp")
+        app = docker.build("tk/nodeapp")
     }
 
     stage('Test image') {
