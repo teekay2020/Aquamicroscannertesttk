@@ -24,7 +24,7 @@ node {
         /* 
 			You would need to first register with DockerHub before you can push images to your account
 		*/
-        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
+        docker.withRegistry('147453477443.dkr.ecr.eu-west-1.amazonaws.com', 'tk') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
             } 
